@@ -88,7 +88,7 @@
             <h3 class="text-center opacity-80">Cashout</h3>
           </div>
           <!-- card 3 -->
-          <div
+          <div id="transfer-card"
             class="border border-slate-400 rounded-lg p-5 hover:bg-blue-200 hover:border-blue-700 hover:text-blue-700 hover:font-semibold"
           >
             <img
@@ -235,7 +235,6 @@
         </div>
 
         <!-- Cashout  -->
-
         <div id="Cashout-section" class="hidden">
           <h1 class="text-2xl font-semibold my-5">Cash Out</h1>
           <div
@@ -306,6 +305,69 @@
             class="flex flex-col-reverse gap-4"
           ></div>
         </div>
+
+        <!-- Transfer Money  -->
+        <div id="transfer-section" class="hidden">
+          <h1 class="text-2xl font-semibold my-5">Transfer Money</h1>
+          <div
+            class="card bg-base-100 mx-auto w-full shrink-0 shadow-xl rounded-2xl"
+          >
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-black font-semibold text-lg"
+                    >User Account Number</span
+                  >
+                </label>
+                <input
+                  id="trans-number"
+                  value="01738822031"
+                  type="text"
+                  placeholder="Enter 11 digit account number"
+                  class="input PhoneNumber bg-slate-100 rounded-3xl font-semibold"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-black font-semibold text-lg"
+                    >Amount</span
+                  >
+                </label>
+                <input
+                  id="trans-amount"
+                  type="text"
+                  placeholder="Add Amount To Transfer"
+                  class="input PhoneNumber bg-slate-100 rounded-3xl font-semibold"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-black font-semibold text-lg"
+                    >PIN</span
+                  >
+                </label>
+                <input
+                  id="trans-pin"
+                  value="1234"
+                  type="text"
+                  placeholder="Enter 4 Digit PIN"
+                  class="input bg-slate-100 rounded-3xl font-semibold"
+                  required
+                />
+              </div>
+              <div class="form-control mt-6">
+                <button
+                  id="trans-money"
+                  class="btn btn-primary rounded-3xl bg-blue-600 text-white font-semibold text-lg"
+                >
+                  Transfer Money
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
     <script src="scripts/utilities.js"></script>
@@ -315,6 +377,7 @@
     <script src="scripts/cashOut.js"></script>
     <script src="scripts/latestTransaction.js"></script>
     <script src="scripts/showAllTransaction.js"></script>
+    <script src="scripts/transferMoney.js"></script>
     <script src="scripts/toggle.js"></script>
   </body>
 </html>
