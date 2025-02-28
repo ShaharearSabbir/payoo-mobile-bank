@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .outfit {
+        font-family: "Outfit", serif;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-800 outfit">
+    <div
+      class="bg-slate-100 max-w-md mx-auto p-5 min-h-screen flex justify-center items-center"
+    >
+      <div class="w-full">
+        <div class="w-4/5 relative mx-auto -mb-40">
+          <img src="assets/bg.png" alt="" />
+          <img
+            class="absolute top-6 left-24 w-2/6"
+            src="assets/Group.png"
+            alt=""
+          />
+        </div>
+        <div
+          class="card bg-base-100 mx-auto w-full shrink-0 shadow-xl rounded-2xl"
+        >
+          <form class="card-body">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text text-black font-semibold text-xl"
+                  >Mobile Number</span
+                >
+              </label>
+              <input
+                id="login-number"
+                type="text"
+                placeholder="Enter Your Number"
+                class="input PhoneNumber bg-slate-100 rounded-3xl font-semibold text-xl"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text text-black font-semibold text-xl"
+                  >4 Digit PIN</span
+                >
+              </label>
+              <input
+                id="login-pin"
+                type="text"
+                placeholder="Enter 4 Digit PIN"
+                class="input bg-slate-100 rounded-3xl font-semibold text-xl appearance-none"
+                required
+              />
+            </div>
+            <div class="form-control mt-6">
+              <button
+                id="login-btn"
+                class="btn btn-primary rounded-3xl bg-blue-600 text-white font-semibold text-xl"
+              >
+                Login
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/utilities.js"></script>
+    <script src="scripts/login.js"></script>
+  </body>
+</html>
