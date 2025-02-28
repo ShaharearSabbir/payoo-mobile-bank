@@ -88,7 +88,8 @@
             <h3 class="text-center opacity-80">Cashout</h3>
           </div>
           <!-- card 3 -->
-          <div id="transfer-card"
+          <div
+            id="transfer-card"
             class="border border-slate-400 rounded-lg p-5 hover:bg-blue-200 hover:border-blue-700 hover:text-blue-700 hover:font-semibold"
           >
             <img
@@ -110,7 +111,7 @@
             <h3 class="text-center opacity-80">Get Bonus</h3>
           </div>
           <!-- card 5 -->
-          <div
+          <div id="paybill-card"
             class="border border-slate-400 rounded-lg p-5 hover:bg-blue-200 hover:border-blue-700 hover:text-blue-700 hover:font-semibold"
           >
             <img
@@ -368,6 +369,87 @@
             </form>
           </div>
         </div>
+
+        <!-- Pay Bill -->
+
+        <div id="paybill-section" class="hidden">
+          <h1 class="text-2xl font-semibold my-5">Pay Bill</h1>
+          <div
+            class="card bg-base-100 mx-auto w-full shrink-0 shadow-xl rounded-2xl"
+          >
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-black font-semibold text-lg"
+                    >Select To Pay</span
+                  >
+                </label>
+                <select
+                  class="select bg-slate-100 rounded-3xl font-semibold"
+                  required
+                >
+                  <option disabled selected>Select Service</option>
+                  <option>Electricity Bill</option>
+                  <option>Gas Bill</option>
+                  <option>Internet Bill</option>
+                  <option>TAX</option>
+                </select>
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-black font-semibold text-lg"
+                    >Biller Account Number</span
+                  >
+                </label>
+                <input
+                  id="bill-number"
+                  value="01738822031"
+                  type="text"
+                  placeholder="Enter Account Number"
+                  class="input PhoneNumber bg-slate-100 rounded-3xl font-semibold"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-black font-semibold text-lg"
+                    >Amount To Pay</span
+                  >
+                </label>
+                <input
+                  id="bill-amount"
+                  type="text"
+                  placeholder="Add Amount To Pay"
+                  class="input PhoneNumber bg-slate-100 rounded-3xl font-semibold"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-black font-semibold text-lg"
+                    >PIN</span
+                  >
+                </label>
+                <input
+                  id="bill-pin"
+                  value="1234"
+                  type="text"
+                  placeholder="Enter 4 Digit PIN"
+                  class="input bg-slate-100 rounded-3xl font-semibold"
+                  required
+                />
+              </div>
+              <div class="form-control mt-6">
+                <button
+                  id="bill-money"
+                  class="btn btn-primary rounded-3xl bg-blue-600 text-white font-semibold text-lg"
+                >
+                  Pay Bill
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
     <script src="scripts/utilities.js"></script>
@@ -378,6 +460,7 @@
     <script src="scripts/latestTransaction.js"></script>
     <script src="scripts/showAllTransaction.js"></script>
     <script src="scripts/transferMoney.js"></script>
+    <script src="scripts/payBill.js"></script>
     <script src="scripts/toggle.js"></script>
   </body>
 </html>

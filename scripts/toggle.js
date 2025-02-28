@@ -4,6 +4,7 @@ document.getElementById("logo-image").addEventListener("click", function () {
   displayProperty("Cashout-section", "none");
   displayProperty("all-transactions-section", "none");
   displayProperty("transfer-section", "none");
+  displayProperty("paybill-section", "none");
 });
 document
   .getElementById("add-money-card")
@@ -13,6 +14,7 @@ document
     displayProperty("transaction-section", "none");
     displayProperty("all-transactions-section", "none");
     displayProperty("transfer-section", "none");
+    displayProperty("paybill-section", "none");
   });
 
 document.getElementById("cashout-card").addEventListener("click", function () {
@@ -21,6 +23,7 @@ document.getElementById("cashout-card").addEventListener("click", function () {
   displayProperty("transaction-section", "none");
   displayProperty("all-transactions-section", "none");
   displayProperty("transfer-section", "none");
+  displayProperty("paybill-section", "none");
 });
 
 document
@@ -31,10 +34,21 @@ document
     displayProperty("add-money-section", "none");
     displayProperty("transaction-section", "none");
     displayProperty("transfer-section", "none");
+    displayProperty("paybill-section", "none");
   });
 
 document.getElementById("transfer-card").addEventListener("click", function () {
   displayProperty("transfer-section", "block");
+  displayProperty("all-transactions-section", "none");
+  displayProperty("Cashout-section", "none");
+  displayProperty("add-money-section", "none");
+  displayProperty("transaction-section", "none");
+  displayProperty("paybill-section", "none");
+});
+
+document.getElementById("paybill-card").addEventListener("click", function () {
+  displayProperty("paybill-section", "block");
+  displayProperty("transfer-section", "none");
   displayProperty("all-transactions-section", "none");
   displayProperty("Cashout-section", "none");
   displayProperty("add-money-section", "none");
